@@ -1,0 +1,1194 @@
+/* VARIÁVEIS GLOBAIS */
+* {
+  font-family: "Secular One", sans-serif;
+}
+.bg-primary-color {
+  /*background:url(../img/background.split.png); Não fica legal pois aparece um faixa na lateral direita do slider e em baixo*/
+  background-image: linear-gradient(to left, #11082D, #321C51, #1F103C,#0E082E, #151350);
+}
+
+.bg-secund-color {
+  background: #711ccb;
+}
+
+.primary-color {
+  color: #fff;
+}
+
+#navbar a .active { /*Bordar no link que tiver active*/
+  border-bottom: 1px solid #711ccb; 
+}
+
+/*  NAVBAR */
+#navbar a:hover {
+  color: #711ccb;
+}
+
+#navbar a.active {
+  border-bottom: 1px solid #711ccb;
+}
+
+.navbar-brand {
+  display: flex;
+}
+
+.navbar-brand img {
+  width: 130px;
+}
+
+.navbar-brand span {
+  color: #ffffff5d;
+  position: relative;
+  font-weight: 700px;
+  font-size: 0.6em;
+  top: 48px;
+  left: -95px;
+}
+
+#navbar-items .navbar-nav {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+#navbar-items .nav-item { 
+  margin: 0 1em;
+}
+
+/* SLIDER */
+.carousel-inner {
+  height: 500px;
+}
+#slider {
+  margin-top: 8em;
+  margin-bottom: 1em;
+}
+
+ #img-slider {
+  margin-left: 60px;
+}
+
+#slider .carousel-caption {
+  bottom: 3em;
+}
+
+#slider .carousel-caption h5 {
+  position: relative;
+  bottom: 110px;
+  left: 400px;
+  text-align: right;
+  width: 65%;
+  font-size: 3em;
+}
+
+
+
+.btn {
+  position: relative;
+  bottom: 20px;
+  left: 200px;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #fff;
+  margin-right: 20px;
+  width: 120px;
+}
+#btnCadastro {
+  width: 115px;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 12px;
+}
+
+
+.btnSaibaMais:hover {
+  color: #711ccb;
+  border: 1px solid #711ccb;
+  box-shadow: 2px 2px 10px #000;
+}
+
+.btnComecar, #btnEnviarContato {
+  border: none;
+}
+.btnComecar:hover, #btnCadastro:hover, #btnEnviarContato:hover {
+  background-color: #ffff;
+  color: #711ccb;
+  box-shadow: 2px 2px 10px #000;
+}
+
+#slider .btn {
+  padding: 0.3 0.8em;
+  font-size: 1em;
+}
+/* Botão para mudar de slider */
+.carousel-control-prev i,
+.carousel-control-next i {
+  color: #6d3cc8a9;
+  font-size: 3em;
+}
+ /* Indicador de posição de slider */
+.carousel-indicators [data-bs-target] {
+  background-color: #6d3cc88f;
+  opacity: 0.8;
+}
+
+.carousel-indicators .active {
+  background-color: #222;
+}
+
+
+
+/* CARDS BENEFÍCIOS */
+#card-beneficios-01, #card-beneficios-02, #card-beneficios-03 {
+  background-color: #6d3cc800;
+  margin-top: 30px;
+  padding: 10px;
+}
+#mini-banners {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#mini-banners h1 {
+  color: #6d3cc800;
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: bold;
+  background-image: linear-gradient(to bottom, #711ccb,#fff );
+  background-clip: text;/* `background-clip: text` Cor que contraste com o degradê, caso o navegador não suporte */
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; /* Apagar o texto, deixando apenas o fundo atrás dele */
+  color: black;
+  box-shadow: 2px 2px 10px #000;
+  border-radius: 10px;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  animation: giro .5s infinite alternate;
+}
+ /*Giro titulo mini-banners ↑ */
+ @keyframes giro {
+  from {
+    transform: rotate(.2deg);
+  }
+  to {
+    transform: rotate(-.2deg);
+  }
+}
+
+#mini-banners .card {
+  border: 5px solid #6d3cc8a9;
+  border-top: none;
+  padding: 1em 0.3em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+#card-beneficios-01 h5, #card-beneficios-02 h5, #card-beneficios-03 h5 {
+  position: relative;
+  top: -45px;
+  font-size: 2em;
+  letter-spacing: 3px;
+  line-height: 27px;
+  font-weight: bold;
+  background-image: linear-gradient(to bottom, white 20%,#18175D );
+  background-clip: text;/* `background-clip: text` Cor que contraste com o degradê, caso o navegador não suporte */
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; /* Apagar o texto, deixando apenas o fundo atrás dele */
+  color: black;
+}
+
+
+#card-beneficios-01 p, #card-beneficios-02 p, #card-beneficios-03 p {
+  position: relative;
+  top: -40px;
+  font-size: 16px;
+  color: white;
+  line-height: 23px;
+  letter-spacing: 1px;
+}
+
+#mini-banners .btn {
+  margin-top: 1.5em;
+  padding: 0.6em 1.2em;
+}
+
+/* SESSÃO PLANOS E PREÇOS */
+#info-planos-precos {
+  margin-top: 80px; /*Apenas para desktop*/
+}
+
+#info-planos-precos h1   {
+  color: #ffff;
+  font-size: 2em;
+}
+#info-planos-precos p   {
+  color: #ffff;
+  font-size: 1em;
+}
+
+.form-check-label {
+  color: #ffff;
+  font-size: 15px;
+}
+#flex-switch {
+  font-size: 15px;
+  margin-right: -50px;
+  margin-top: 3px
+}
+/* Cards planos e preços */
+#planos-precos {
+  margin-bottom: 100px;
+}
+#card-pp-one, #card-pp-two, #card-pp-three {
+  /*background:url(../img/background.split.png);*/
+  background-color: #59496bab;
+  color: #ffff;
+  height: 450px;
+  width: 100%;
+  border-radius: 20px;
+  margin: auto;
+  transition: transform 1s;
+  transform: translateX(0) scale(1);
+}
+
+#card-pp-one:hover, #card-pp-two:hover, #card-pp-three:hover,
+#card-pp-one:focus, #card-pp-two:focus, #card-pp-three:focus {
+  background: #551fb9;
+  transform: translateX(10px) scale(1.2);
+  z-index: 10;
+  
+}
+
+#plano-01 {
+  position: relative;
+  bottom: -80px;
+  border-radius: 50px;
+  padding: 5px 30px;
+  border: none;
+  background-color: #551fb9;
+  color: #ffff;
+}
+#plano-02{
+  position: relative;
+  bottom: -10px;
+  border-radius: 50px;
+  padding: 5px 30px;
+  border: none;
+  background-color: #551fb9;
+  color: #ffff;
+}
+
+#plano-03 {
+  position: relative;
+  bottom: -25px;
+  border-radius: 50px;
+  padding: 5px 30px;
+  border: none;
+  background-color: #551fb9;
+  color: #ffff;
+}
+#plano-01:hover, #plano-02:hover, #plano-03:hover {
+  box-shadow: 3px 3px 10px #11082D;
+}
+
+#card-pp-one p, #card-pp-one .card-text, #card-pp-two p, #card-pp-two .card-text, #card-pp-three p, #card-pp-three .card-text  {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#card-pp-one .card-title, #card-pp-two .card-title, #card-pp-three .card-title {
+  font-size: 3.5em;
+}
+#card-pp-one .card-body .sub-title, #card-pp-two .card-body .sub-title, #card-pp-three .card-body .sub-title {
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+
+/* FOOTER TOP */
+#footer {
+  padding: 3em 2em;
+  background:url(../img/background3.png);
+}
+
+#footer-top img {
+  width: 100px;
+}
+
+#footer-top {
+  margin-bottom: 2em;
+}
+#footer-details p {
+  color: #544385;
+}
+
+#footer-top,
+#footer-top i {
+ color: #544385;
+}
+
+#social-icons {
+  text-align: right;
+}
+
+#social-icons i {
+  margin-right: 1em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#social-icons i:hover {
+  color: #ffff;
+}
+
+/*FOOTER DETAILS */
+#footer-details {
+  margin-bottom: 3em;
+}
+
+#news-container,
+#contact-container,
+#links-container {
+  padding: 0;
+  border: 0;
+  margin-bottom: 2em;
+}
+#contact-container i, #contact-container a {
+  color: #544385;
+}
+
+#contact-container a {
+  text-decoration: none;
+}
+
+#footer-details h4 {
+  color: #fff;
+  margin-bottom: 1.5em;
+}
+
+#news-container input {
+  border-radius: 0;
+  border: none;
+}
+
+#btnInscrever:hover {
+  color: #711ccb;
+  border: 1px solid #711ccb;
+  box-shadow: 2px 2px 10px #000;
+}
+#links-container li {
+  margin-bottom: 0.5em;
+}
+
+.list-unstyled a {
+  text-decoration: none;
+  color: #544385;
+}
+
+.list-unstyled a:hover, #contact-container a:hover {
+  color: #ffff;
+}
+
+/* FOOTER BOTTOM */
+
+#footer-bottom {
+  border-top: 1px solid #fff;
+  padding-top: 2em;
+}
+#footer-bottom p {
+  color: #544385;
+}
+
+#footer-bottom i {
+  color: #e61e10;
+  margin-left: 0.3em;
+}
+
+/* PÁGINA SOBRE */
+#container-sobre {
+  margin-top: 10em;
+}
+
+#container-sobre h1 {
+  font-size: 4em;
+  color: #ffff;
+  text-align: center;
+}
+
+#container-sobre p {
+  font-size: 1.5em;
+  color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 700;
+  width: 70%;
+  margin: auto;
+}
+#container-sobre img {
+  width: 10em;
+}
+/* PÁGINA DE CONTATO */
+/* Informações de ontato */
+.container-contato {
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+
+#container-info {
+  background-color: #321c51b9;
+  border: 1px solid #471979;
+  box-shadow: 3px 3px 10px #0000;
+  border-radius: 20px;
+  padding: 60px 40px;
+  margin: auto;
+}
+
+#container-info h1 {
+  color: #ffff;
+  font-size: 3em;
+}
+
+#container-info p {
+  color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+#container-info i {
+  color: #544385;
+  font-size: 1.4em;
+  padding-right: 1em;
+}
+#container-info a {
+  color: #ffff;
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+#container-info a:hover {
+  color: #544385;
+}
+
+/* Formulário de contato */
+#container-form {
+  padding: 40px 40px;
+  border-radius: 20px;
+  margin: auto;
+}
+#container-form form label {
+  color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnEnviarContato {
+  background-color: #711ccb;
+}
+
+#container-form input {
+  border: none;
+  margin-left: -7px;
+  border-bottom: 1px solid #ffff;
+  background-color: transparent;
+  color: #ffff;
+  border-radius: 0px;
+}
+#container-form input:focus, #container-form select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+.form-check input {
+  margin-right: 10px;
+}
+
+#btnEnviarContato {
+  position: relative;
+  top: 10px;
+  left: 8px;
+}
+/*Imagem do anel */
+/*
+ #anel {
+   width: 400px;
+   position: absolute;
+   z-index: -10;
+   margin-top: -310px;
+   margin-left: -150px;
+   
+   animation: zoom 10s infinite alternate;
+ }/*
+ /*Zoom anél ↑ */
+ /*
+ @keyframes zoom {
+  from {
+    width: 400px;
+  }
+  to {
+    width: 80px;
+  }
+}
+*/
+/* PAGE CADASTRO */
+/* Header */
+.container-cadastro {
+  background-image: linear-gradient(to right, #8C0DF3, #6F0BC4, #4B098C, #2F085F, #18073A);
+  text-align: center;
+  height: 160px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffff;
+}
+
+.container-cadastro h1 {
+  font-size: 2.5em;
+  font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+}
+.container-cadastro p {
+  font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+}
+
+.container-cadastro a {
+  font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+  text-decoration: none;
+  color: #ffff;
+  margin-left: 5px;
+}
+
+.container-cadastro a:hover {
+  color: #940DFF;
+}
+/* Formulário cadastro */
+#container-form-cadastro {
+  margin: auto;
+}
+#container-form-cadastro label, #container-form-entrar label, #container-form-recupSenha label {
+  color: #808080;
+  margin-left: 7px;
+}
+
+#container-form-cadastro input, #container-form-entrar input, #container-form-recupSenha input {
+  color: #808080;
+  border-radius: 20px;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+#container-form-cadastro .form-control, #container-form-entrar .form-control, #container-form-recupSenha .form-control{
+  background: #f3f2f2;
+}
+
+#container-form-cadastro a {
+  color: #808080;
+  text-decoration: none;
+}
+#container-form-cadastro a:hover {
+  color: #940DFF;
+}
+#btnCadastroPageCadastro, #btnEntrarPage {
+  background-color: #940DFF;
+  left: 2px;
+  top: 2px;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+#btnVoltarHomePcadastro, #btnVoltarHomePEntrar, #btnContinuarPgRecupSenha,
+#btnVoltarHomePEntrar2 {
+  background-color: #940DFF;
+  left: 2px;
+  top: 2px;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+#btnCadastroPageCadastro:active, #btnVoltarHomePcadastro:active, #btnVoltarHomePEntrar:active, #btnEntrarPage:active, #btnContinuarPgRecupSenha:active,
+#btnVoltarHomePEntrar2:active {
+  box-shadow: 2px 2px 6px #000;
+}
+
+#btnVoltarHomePcadastro:hover , #btnCadastroPageCadastro:hover, #btnEntrarPage:hover, #btnVoltarHomePEntrar:hover,
+#btnContinuarPgRecupSenha:hover,
+#btnVoltarHomePEntrar2:hover {
+  color: #940DFF;
+  border: 1px solid #940DFF;
+  background-color: #fff;
+}
+
+/* PÁGINA ENTRAR*/
+
+#container-form-entrar, #container-form-recupSenha {
+  margin: auto;
+  padding: 40px;
+}
+
+#container-form-entrar a {
+  text-decoration: none;
+  color: #808080;
+}
+
+#container-form-entrar a:hover {
+  text-decoration: none;
+  color: #940DFF;
+}
+
+/* PAGE INICIO */
+/* Menu lateral */
+#page-inicio-menu {
+  position: static;
+}
+
+#page-inicio-menu i {
+  color: #fff;
+  font-size: 2.9em;
+  display: block;
+  padding: 12px 5px;
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+#page-inicio-menu i:hover, #saudacao-page-inicio i:hover {
+  color: #940DFF;
+}
+
+#page-inicio-menu i:active, #saudacao-page-inicio i:active {
+  text-shadow: 4px 4px 8px #000;
+}
+
+
+
+#page-inicio-menu ul {
+  list-style: none;
+}
+
+#page-inicio-menu input[type="checkbox"] {
+  display: none;
+}
+
+#page-inicio-menu nav {
+  border-right: 1px solid #fff;
+  width: 70px;
+  position: absolute;
+  left: -70px; /* Impurrar o menu para fora da tela escondendo o mesmo*/
+}
+
+#page-inicio-menu input[type="checkbox"]:checked ~ nav {
+  transform: translateX(70px);
+}
+
+
+#page-inicio-menu label i {
+  margin-left: -5px;
+}
+
+#page-inicio-menu label i:active {
+  transform: rotate(-180deg);
+  transition: 1s;
+}
+
+/* Sessão saudação */
+#saudacao-page-inicio i {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+#saudacao-page-inicio h1 {
+  color: #fff;
+}
+
+/* Sessão subtitle */
+#subtitle-page-inicio h3 {
+  color: #fff;
+}
+
+#btnPgInicioCriarPasta, #btnPgInicioCriarProjeto {
+  width: auto;
+}
+
+#box-btn-inicio {
+  border: 1px solid #fff;
+}
+
+#btn-01 {
+  border: 1px solid red;
+}
+
+#btn-02 {
+  border: 1px solid blue;
+}
+
+
+
+
+
+
+
+/*  ############################### 
+                               MEDIA QUERY 
+                                        ############################ */
+
+@media (min-width: 1201px) {
+  #card-beneficios-01, #card-beneficios-02, #card-beneficios-03{
+    width: 100%;
+    height: 170px;
+    margin: auto;
+  }
+  /*Footer*/
+  #btnInscrever {
+    position: relative;
+    margin-top: 30px;
+    left: 0px;
+  }
+  /* Cards Planos e benefícios */
+  #card-pp-one, #card-pp-two, #card-pp-three {
+    width: 100%;
+    height: 400px;
+  }
+  #plano-03 {
+    bottom: -10px;
+  }
+  #plano-01 {
+    bottom: -60px;
+  }
+  #plano-02 {
+    bottom: -10px;
+  }
+}
+@media (max-width: 1200px) {
+  #slider .carousel-caption h5 {
+    bottom: 80px;
+    left: 300px;
+    width: 60%;
+    font-size: 3em;
+  }
+  #mini-banners .card {
+    height: 230px;
+  }
+  /*Footer*/
+  #btnInscrever {
+    position: relative;
+    margin-top: 30px;
+    left: 0px;
+  }
+  /* Cards Planos e benefícios */
+  #card-pp-one, #card-pp-two, #card-pp-three {
+    width: 100%;
+    height: 450px;
+  }
+  #plano-03 {
+    bottom: -35px;
+  }
+  #plano-01 {
+    bottom: -83px;
+  }
+  #plano-02 {
+    bottom: -10px;
+  }
+}
+
+@media (max-width: 992px) {
+  #img-slider {
+    margin-left: 0px;
+  }
+  
+  #card-beneficios-02 .card-body p {
+    margin: 0px auto;
+  }
+  #mini-banners .card {
+    height: 20em;
+  }
+  
+  #slider .carousel-caption h5 {
+    font-size: 2.3em;
+    width: 65%;
+    left: 250px;
+  }
+  #card-beneficios-01 .card-body p, #card-beneficios-02 .card-body p, #card-beneficios-03 .card-body p {
+    font-size: 1.1em;
+    width: 100%;
+  }
+
+  #card-beneficios-01, #card-beneficios-02, #card-beneficios-03{
+    width: 200px;
+    height: 500px;
+    margin: auto;
+  }
+  #card-beneficios-01 .card-body h5, #card-beneficios-02 .card-body h5, #card-beneficios-03 .card-body h5 {
+    font-size: 1.5em;
+  }
+  /*Footer*/
+  #btnInscrever {
+    position: relative;
+    margin-top: 30px;
+    left: 0px;
+  }
+  /*PÁGINA CONTATO*/
+  #container-info h1 {
+    font-size: 1.5em;
+  }
+  
+  #container-info p {
+    font-size: .9em;
+  }
+  
+  #container-info i {
+    font-size: 1em;
+    padding-right: .3em;
+  }
+  #container-info a {
+    font-size: .9em;
+  }
+  .container-info {
+    width: 100%;
+  }
+  /* IMAGEM ANÈL */
+  #anel {
+    width: 400px;
+    margin-top: -250px;
+    margin-left: -120px;
+  }
+  /*
+  @keyframes zoom {
+    from {
+      width: 400px;
+    }
+    to {
+      width: 80px;
+    }
+  }
+  */
+  /* Cards Planos e benefícios */
+  #card-pp-one, #card-pp-two, #card-pp-three {
+    width: 95%;
+    height: 500px;
+  }
+  #card-planos-precos .card-body h1 {
+    font-size: 2.5em;
+  }
+  #plano-03 {
+    bottom: -15px;
+    left: -5px;
+  }
+  #plano-01 {
+    bottom: -110px;
+    left: -5px;
+  }
+  #plano-02 {
+    bottom: -15px;
+    left: -5px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #img-slider {
+    margin: auto;
+    width: 150px;
+  }
+  #slider .carousel-caption h5 {
+    font-size: 1.3em;
+    text-align: center;
+    width: 100%;
+    left: 5px;
+    top: 220px;
+  }
+  
+  .btn {
+    top: 260px;
+    left: 0px;
+  }
+  .carousel-inner {
+    height: 470px;
+  }
+  
+  #card-beneficios-01 .card-body h5, #card-beneficios-02 .card-body h5, #card-beneficios-03 .card-body h5 {
+    font-size: 2em;
+  }
+  #mini-banners .card {
+    width: 100%;
+    height: 160px;
+    margin: auto;
+  }
+  /*Footer*/
+  #btnInscrever {
+    position: relative;
+    margin-top: -480px;
+  }
+  /* PAGE SOBRE */
+  #container-sobre h1 {
+    font-size: 2.5em;
+    
+  }
+  
+  #container-sobre p {
+    font-size: 1.3em;
+    width: 100%;
+  }
+  /*PÁGINA CONTATO*/
+  #container-info h1 {
+    font-size: 3em;
+  }
+  
+  #container-info p {
+    font-size: 1.3em;
+  }
+  
+  #container-info i {
+    font-size: 1.5em;
+    padding-right: .8em;
+  }
+  #container-info a {
+    font-size: 1.1em;
+  }
+  .container-info {
+    width: 95%;
+  }
+  /* IMAGEM ANÈL */
+  /*+#anel {
+    width: 380px;
+    margin-top: -250px;
+    margin-left: -150px;
+  }
+  @keyframes zoom {
+    from {
+      width: 380px;
+    }
+    to {
+      width: 70px;
+    }
+  }
+  */
+  /* Cards Planos e benefícios */
+  #card-pp-one, #card-pp-two, #card-pp-three {
+    width: 100%;
+    height: 380px;
+  }
+  #plano-03 {
+    bottom: -5px;
+  }
+  #plano-01 {
+    bottom: -57px;
+  }
+  #card-pp-one, #card-pp-two, #card-pp-three {
+    transition: transform 1s;
+    transform: translateX(0) scale(1);
+  } 
+  /* PAGE CADASTRO */
+  .container-cadastro {
+    height: 140px;
+  }
+  .container-cadastro h1 {
+    font-size: 2em;
+  }
+
+}
+
+@media (min-width: 768px) {
+  #news-container {
+      padding-right: 2em;
+  }
+
+  #links-container {
+      padding-left: 2em;
+  }
+
+  #contact-container {
+      padding: 0 2em;
+      border-left: 1px solid #ffff;
+      border-right: 1px solid #ffff;
+  }
+}
+
+@media (max-width: 348px) {
+  #slider .carousel-caption h5 {
+    font-size: 1.3em;
+  }
+  #card-beneficios-01 .card-body h5, #card-beneficios-02 .card-body h5, #card-beneficios-03 .card-body h5 {
+    font-size: 1.5em;
+  }
+  #mini-banners .card {
+    height: 220px;
+  }
+  /*Footer*/
+  #btnInscrever {
+    position: relative;
+    margin-top: -480px;
+  }
+  /* PAGE SOBRE */
+  #container-sobre h1 {
+    font-size: 2.5em;
+    
+  }
+  
+  #container-sobre p {
+    font-size: 1.2em;
+    width: 90%;
+  }
+  /*PÁGINA CONTATO*/
+  #container-info h1 {
+    font-size: 2em;
+  }
+  
+  #container-info p {
+    font-size: 1em;
+  }
+  
+  #container-info i {
+    font-size: 1em;
+    padding-right: .2em;
+  }
+  #container-info a {
+    font-size: .9em;
+  }
+  .container-info {
+    width: 95%;
+  }
+  /* IMAGEM ANÈL */
+  
+  /*#anel {
+    width: 250px;
+    margin-top: -210px;
+    margin-left: -80px;
+  }
+  @keyframes zoom {
+    from {
+      width: 250px;
+    }
+    to {
+      width: 60px;
+    }
+  }
+  */
+  /* Cards Planos e benefícios */
+  #card-pp-one, #card-pp-two, #card-pp-three {
+    width: 100%;
+    height: 415px;
+  }
+  #plano-01 {
+    bottom: -55px;
+  }
+  #plano-03 {
+    bottom: -12px;
+  }
+  /* PAGE CADASTRO */
+  .container-cadastro {
+    height: 170px;
+  }
+  .container-cadastro h1 {
+    font-size: 1.8em;
+  }
+  #btnCadastroPage {
+    left: 30px;
+  }
+  #btnVoltarHomePcadastro {
+    left: 2px;
+    top: 2px;
+  }
+}
+
+@media (max-width:261px) {
+  /* Cards benefícios */
+  #mini-banners .card {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+  }
+  #card-beneficios-01 .card-body h5, #card-beneficios-02 .card-body h5, #card-beneficios-03 .card-body h5 {
+    font-size: 1.2em;
+  }
+  #card-beneficios-01 .card-body p, #card-beneficios-02 .card-body p, #card-beneficios-03 .card-body p {
+    font-size: 15px;
+  }
+
+  /* Slider */
+  #slider {
+    margin-top: 10em;
+  }
+  #slider .carousel-caption h5 {
+    top: 11.5em;
+  }
+
+  /*Footer*/
+  #btnInscrever {
+    position: relative;
+    margin-top: -480px;
+  }
+
+  /* PAGE SOBRE */
+  #container-sobre h1 {
+    font-size: 2em;
+    
+  }
+  
+  #container-sobre p {
+    font-size: 1em;
+    width: 90%;
+  }
+
+  /*PÁGINA CONTATO*/
+  #container-info h1 {
+    font-size: 1.5em;
+  }
+  
+  #container-info p {
+    font-size: .8em;
+  }
+  
+  #container-info i {
+    font-size: 1em;
+    padding-right: .2em;
+  }
+  #container-info a {
+    font-size: .9em;
+  }
+  .container-info {
+    width: 95%;
+  }
+
+  /* IMAGEM ANÈL */
+ /* 
+ #anel {
+    width: 200px;
+    margin-top: -210px;
+    margin-left: -80px;
+  }
+  @keyframes zoom {
+    from {
+      width: 200px;
+    }
+    to {
+      width: 40px;
+    }
+  }*/
+  /* Cards Planos e benefícios */
+  #card-pp-one, #card-pp-two, #card-pp-three {
+    width: 100%;
+    height: 460px;
+  }
+  #plano-01 {
+    bottom: -75px;
+    left: 1px;
+  }
+  #plano-02 {
+    bottom: -5px;
+    left: 1px;
+  }
+  #plano-03 {
+    bottom: -28px;
+    left: 1px;
+  }
+  /* PAGE CADASTRO */
+  .container-cadastro {
+    height: 180px;
+  }
+  .container-cadastro h1 {
+    font-size: 1.6em;
+  }
+  #btnCadastroPage {
+    left: 2rem;
+  }
+  #btnVoltarHomePcadastro {
+    left: 2px;
+    top: 5px;
+  }
+  #btnVoltarHome {
+    margin-top: 10px;
+  }
+}

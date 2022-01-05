@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Voospax</title>
+    <!-- Favicon --> 
+    <link rel="shortcut icon" href="./img/faviconOne.ico" type="image/x-icon">
+    <!-- Google fonts Secular One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- CSS local -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="bg-primary-color">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-3">
+            <a href="index.html" class="navbar-brand primary-color">
+                <img src="img/logo-01.png" alt="Voospax">
+                <span>e-books</span>
+            </a>
+            <!--Botão hamburguer para mobile-->
+            <button  
+            class="navbar-toggler" 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-items"
+            aria-controls="navbar-items"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mt-2">
+                        <a href="index.html" class="nav-link  primary-color" >Início</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a href="sobre.html" class="nav-link active primary-color" aria-current="page">Sobre</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a href="contato.html" class="nav-link primary-color">Contato</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a href="cadastro.html" class="nav-link bg-secund-color" id="btnCadastro">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container" id="container-sobre">
+        <div class="col-12 col-md-10 offset-md-1 mt-5 mb-5" >
+            <h1 class="title mb-5">Quem somos</h1>
+            <p>A Voospax Split é uma ferramenta de criação, produção e
+                finalização de e-books, apresentações e textos. Você pode
+                personalizar e basta ter uma boa ideia, nós fazemos todo o resto.
+                Compartilhe e exiba seus projetos com opções de downloads e
+                avaliações.</p>
+                <br>
+            <p>Você pode usar nossas ferramentas gratuitamente para sempre,
+                porém também é possível adquirir um plano e obter acesso a
+                diversos recursos Premium.</p>
+                <div class="col-12 mt-5">
+                    <div class="row justify-content-center">
+                        <img src="img/01.png" alt="Astronaulta Voospax">
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- FOOTER --> 
+    <div class="container-fluid bg-secund-color" id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- FOOTER TOP -->
+                <div class="col-12" id="footer-top">
+                    <div class="row justify-content-between">
+                        <div class="col-4"><img src="img/logo-01.png" alt=""></div>
+                            <div class="col-4" id="social-icons">
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-youtube"></i>
+                                <i class="bi bi-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER DETAILS -->
+            <div class="col-12" id="footer-details">
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-5" id="new-container">
+                        <h4>Fique por dentro das novidades</h4>
+                        <p>Inscreva-se para receber novidades</p>
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" name="email" id="emailNewLetter" class="form-control" placeholder="Digite seu e-mail...">
+                                <button class="btn" id="btnInscrever" type="submit">Inscrever</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-4" id="contact-container">
+                        <h4>Formas de Contato:</h4>
+                        <p><i class="bi bi-telephone"></i> (XX) 9999-9999</p>
+                        <p><a href="https://bit.ly/3oScwEw" target="_blank" rel="external"><i class="bi bi-whatsapp"></i> +55 15 99657-1410</a></p>
+                        <p><a href="mailto:contato@voospax.com" target="_blank" rel="external"><i class="bi bi-envelope-plus"></i> contato@voospax.com</a></p>
+                    </div>
+                    <div class="col-12 col-md-4" id="link-container">
+                        <div class="row">
+                            <h4>Itens mais pesquisados:</h4>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Criar e-book</a></li>
+                                    <li><a href="#">Planos</a></li>
+                                    <li><a href="#">Modelos</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Contratar</a></li>
+                                    <li><a href="#">Trabalhe conosco</a></li>
+                                    <li><a href="#">Contato</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER BOTTOM -->
+            <div class="col-12" id="footer-bottom">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-3">
+                        <p>Voospax &copy; 2021</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <p>Crie o seu e-book do coração <i class="bi bi-heart"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<!-- JavaScript do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</html>

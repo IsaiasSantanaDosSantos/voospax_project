@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Voospax</title>
+    <!-- Favicon --> 
+    <link rel="shortcut icon" href="./img/faviconOne.ico" type="image/x-icon">
+    <!-- Google fonts Secular One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- CSS local -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="bg-primary-color">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-3">
+            <a href="index.html" class="navbar-brand primary-color">
+                <img src="img/logo-01.png" alt="Voospax">
+                <span>e-books</span>
+            </a>
+            <!--Botão hamburguer para mobile-->
+            <button  
+            class="navbar-toggler" 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-items"
+            aria-controls="navbar-items"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mt-2">
+                        <a href="index.html" class="nav-link  active primary-color" aria-current="page">Início</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a href="sobre.html" class="nav-link primary-color">Sobre</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a href="contato.html" class="nav-link primary-color">Contato</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                        <a href="cadastro.html" class="nav-link bg-secund-color" id="btnCadastro">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- SLIDER -->
+    <div class="container" id="slider-container">
+        <div class="carousel slide" id="slider" data-bs-ride="carousel">
+            <!-- Indicador de posição de slider -->
+            <div class="carousel-indicators">
+                <button 
+                type="button"
+                class="active" 
+                data-bs-target="#slider"
+                data-bs-slide-to="0"
+                aria-current="true"
+                aria-label="slide 1"
+                ></button>
+                <button 
+                type="button"
+                data-bs-target="#slider"
+                data-bs-slide-to="1"
+                aria-label="slide 2"
+                ></button>
+                <button 
+                type="button" 
+                data-bs-target="#slider"
+                data-bs-slide-to="2"
+                aria-label="slide 3"
+                ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/image.split.png" alt="SmartPhone" id="img-slider" class="d-block ">
+                    <div class="carousel-caption">
+                        <h5>Crie seu e-book perfeito em poucos passos.</h5>
+                        <a href="entrar.html" class="btn bg-secund-color mb-2 btnComecar">Começar</a>
+                        <a href="#" class="btn mb-2 btnSaibaMais">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/ebook-creator.png" alt="Create e-books" id="img-slider" class="d-block">
+                    <div class="carousel-caption">
+                        <h5>Uma nova forma de criar e lançar seus e-books.</h5>
+                        <a href="entrar.html" class="btn bg-secund-color mb-2 btnComecar">Começar</a>
+                        <a href="#" class="btn mb-2 btnSaibaMais">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/ambiente-online.png" alt="Ambiente online" id="img-slider" class="d-block">
+                    <div class="carousel-caption">
+                        <h5>Tenha um ambiente online exclusivo para leitura.</h5>
+                        <a href="entrar.html" class="btn bg-secund-color mb-2 btnComecar">Começar</a>
+                        <a href="#" class="btn mb-2 btnSaibaMais">Saiba mais</a>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Botão para mudar de slider -->
+            <button 
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#slider"
+                data-bs-slide="prev"
+                >
+                <i class="bi bi-chevron-compact-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button 
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#slider"
+                data-bs-slide="next"
+                >
+                <i class="bi bi-chevron-compact-right"></i>
+                <span class="visually-hidden">Nextious</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- CARDS BENEFÍCIOS -->
+    <div class="container">
+        <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+            <h1 class="title mb-5">B e n e f í c i o s</h1>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-5">
+                    <div class="card text-center" id="card-beneficios-01">
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">PRATICIDADE</h5>
+                            <p class="card-text secondary-color">Fácil e rápido. Com a nossa ferramenta, em poucos minutos você consegue criar e distribuir seus e-books.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-5">
+                        <div class="card text-center" id="card-beneficios-02">
+                            <div class="card-body">
+                                <h5 class="card-title primary-color">CHECKOUT PRÓPRIO</h5>
+                                <p class="card-text secondary-color">Tenha uma página de checkout interna segura monitorando toda movimentação.</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-12 col-md-4 mb-5">
+                    <div class="card text-center" id="card-beneficios-03">
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">ESTEJA NO CONTROLE</h5>
+                            <p class="card-text secondary-color">Você pode gerenciar de forma intuitiva e fácil, desde a criação até a venda e distribuição do produto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- SESSÂO PLANOS E PREÇOS  -->
+    <div class="container">
+        <div class="col-12 col-md-12 w-100" id="planos-precos">
+            <div class="row justify-content-center">
+                <!-- INFORMAÇÂO PLANOS E PREÇOS -->
+                <div class="col-12 col-md-2 mb-5" id="info-planos-precos">
+                    <h1 class="title mb-3">Planos e preços</h1>
+                    <p class="mb-5">Com nossos planos você tem
+                        acesso a diversos benefícios
+                        spaxer e muito mais.</p>
+                    <div class="form-check form-switch">
+                        <input type="checkbox" class="form-check-input" id="flex-switch">
+                        <label for="flex-switch" class="form-check-label">Promoção</label>
+                    </div>
+                </div>
+                <!-- CARDS PLANOS E PREÇOS -->
+                <div class="col-12 col-md-10 mt-2" id="card-planos-precos">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-4 mt-3">
+                            <div class="card text-center" id="card-pp-one">
+                                <div class="card-body">
+                                    <h1 class="card-title">R$0</h1>
+                                    <p>Para sempe</p>
+                                    <h5 class="sub-title">Gratuito</h5>
+                                    <hr>
+                                    <p>Acesso a recursos selecionados</p>
+                                    <div class="card-text">Acesse sua conta de onde você estiver.</div>
+                                    <button type="submit" id="plano-01">Selecionar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3">
+                            <div class="card text-center" id="card-pp-two">
+                                <div class="card-body">
+                                    <h1 class="card-title">R$11</h1>
+                                    <p>Por mês</p>
+                                    <h5 class="sub-title">Pró</h5>
+                                    <hr>
+                                    <p>Acesso aos recursos ilimitados</p>
+                                    <div class="card-text">1 Tiket de convite grátis para convidar amigos.
+                                    Cancele, acesse e gerencie da voospax de onde e quando quiser.</div>
+                                    <button type="submit" id="plano-02">Selecionar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3">
+                            <div class="card text-center" id="card-pp-three">
+                                <div class="card-body">
+                                    <h1 class="card-title">R$25</h1>
+                                    <p>Por mês</p>
+                                    <h5 class="sub-title">Spaxer</h5>
+                                    <hr>
+                                    <p>Tudo do pro+</p>
+                                    <div class="card-text">Recursos e acessos antecipados a conteúdos Cancele, acesse e gerencie da voospax</div>
+                                    <br>
+                                    <button type="submit" id="plano-03">Selecionar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER --> 
+    <div class="container-fluid bg-secund-color" id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- FOOTER TOP -->
+                <div class="col-12" id="footer-top">
+                    <div class="row justify-content-between">
+                        <div class="col-4"><img src="img/logo-01.png" alt="">
+                        </div>
+                        <div class="col-4" id="social-icons">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER DETAILS -->
+            <div class="col-12" id="footer-details">
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-5" id="new-container">
+                        <h4>Fique por dentro das novidades</h4>
+                        <p>Inscreva-se para receber novidades</p>
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" name="email" id="emailNewLetter" class="form-control" placeholder="Digite seu e-mail...">
+                                <button class="btn" id="btnInscrever" type="submit">Inscrever</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-4" id="contact-container">
+                        <h4>Formas de Contato:</h4>
+                        <p><i class="bi bi-telephone"></i> (XX) 9999-9999</p>
+                        <p><a href="https://bit.ly/3oScwEw" target="_blank" rel="external"><i class="bi bi-whatsapp"></i> 15 99657-1410</a></p>
+                        <p><a href="mailto:contato@voospax.com" target="_blank" rel="external"><i class="bi bi-envelope-plus"></i> contato@voospax.com</a></p>
+                    </div>
+                    <div class="col-12 col-md-4" id="link-container">
+                        <div class="row">
+                            <h4>Itens mais pesquisados:</h4>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Criar e-book</a></li>
+                                    <li><a href="#">Planos</a></li>
+                                    <li><a href="#">Modelos</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Contratar</a></li>
+                                    <li><a href="#">Trabalhe conosco</a></li>
+                                    <li><a href="#">Contato</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER BOTTOM -->
+            <div class="col-12" id="footer-bottom">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-3">
+                        <p>Voospax &copy; 2021</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <p>Crie o seu e-book do coração <i class="bi bi-heart"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<!-- JavaScript do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</html>
